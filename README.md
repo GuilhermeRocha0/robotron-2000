@@ -15,6 +15,6 @@ Projeto desenvolvido durante o curso JavaScript: manipulando o DOM da Alura.
 ## Deployment
 
 <p>Link to the page: 
-<a href=""
+<a href="https://guilhermerocha0.github.io/robotron-2000/"
 rel="noopener noreferrer" target="_blank">Robotron 2000</a>
 </p>
