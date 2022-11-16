@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico" />
+    <title>Robotron 2000</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="robotron">
+        <img class="robot" src="img/robotron.png" alt="Robotron" />
+        <figcaption class="title">ROBOTRON <br />2000</figcaption>
+      </section>
+
+      <section class="box statistics">
+        <div class="statistic">
+          <p class="statistic-title">Força</p>
+          <div class="statistic-value">
+            <p class="statistic-number" data-statistic="strength">768</p>
+          </div>
+        </div>
+        <div class="statistic">
+          <p class="statistic-title">Poder</p>
+          <div class="statistic-value">
+            <p class="statistic-number" data-statistic="power">630</p>
+          </div>
+        </div>
+        <div class="statistic">
+          <p class="statistic-title">Energia</p>
+          <div class="statistic-value">
+            <p class="statistic-number" data-statistic="energy">289</p>
+          </div>
+        </div>
+        <div class="statistic">
+          <p class="statistic-title">Velocidade</p>
+          <div class="statistic-value">
+            <p class="statistic-number" data-statistic="speed">597</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="equipments">
+        <form action="" class="fitter">
+          <div class="box fitter-content">
+            <div class="piece">
+              <label for="" class="piece-title">Braços</label>
+              <div class="control">
+                <buttom
+                  class="control-adjustment"
+                  data-control="-"
+                  data-piece="arms"
+                  >-</buttom
+                >
+                <input
+                  type="text"
+                  class="control-counter"
+                  data-counter
+                  value="00"
+                />
+                <buttom
+                  class="control-adjustment"
+                  data-control="+"
+                  data-piece="arms"
+                  >+</buttom
+                >
+              </div>
+            </div>
+            <hr class="line" />
+            <div class="piece">
+              <label for="" class="piece-title">Blindagem</label>
+              <div class="control">
+                <buttom
+                  class="control-adjustment"
+                  data-control="-"
+                  data-piece="armor"
+                  >-</buttom
+                >
+                <input
+                  type="text"
+                  class="control-counter"
+                  data-counter
+                  value="00"
+                />
+                <buttom
+                  class="control-adjustment"
+                  data-control="+"
+                  data-piece="armor"
+                  >+</buttom
+                >
+              </div>
+            </div>
+            <hr class="line" />
+            <div class="piece">
+              <label for="" class="piece-title">Núcleos</label>
+              <div class="control">
+                <buttom
+                  class="control-adjustment"
+                  data-control="-"
+                  data-piece="cores"
+                  >-</buttom
+                >
+                <input
+                  type="text"
+                  class="control-counter"
+                  data-counter
+                  value="00"
+                />
+                <buttom
+                  class="control-adjustment"
+                  data-control="+"
+                  data-piece="cores"
+                  >+</buttom
+                >
+              </div>
+            </div>
+            <hr class="line" />
+            <div class="piece">
+              <label for="" class="piece-title">Pernas</label>
+              <div class="control">
+                <buttom
+                  class="control-adjustment"
+                  data-control="-"
+                  data-piece="legs"
+                  >-</buttom
+                >
+                <input
+                  type="text"
+                  class="control-counter"
+                  data-counter
+                  value="00"
+                />
+                <buttom
+                  class="control-adjustment"
+                  data-control="+"
+                  data-piece="legs"
+                  >+</buttom
+                >
+              </div>
+            </div>
+            <hr class="line" />
+            <div class="piece">
+              <label for="" class="piece-title">Foguetes</label>
+              <div class="control">
+                <buttom
+                  class="control-adjustment"
+                  data-control="-"
+                  data-piece="rockets"
+                  >-</buttom
+                >
+                <input
+                  type="text"
+                  class="control-counter"
+                  data-counter
+                  value="00"
+                />
+                <buttom
+                  class="control-adjustment"
+                  data-control="+"
+                  data-piece="rockets"
+                  >+</buttom
+                >
+              </div>
+            </div>
+          </div>
+          <input
+            type="submit"
+            value="Iniciar produção"
+            class="production"
+            id="production"
+          />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
