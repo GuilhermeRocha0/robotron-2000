@@ -1,9 +1,17 @@
-function updateStatistics(piece) {
+function updateStatistics(operation, piece) {
   console.log(pieces[piece])
   statistics.forEach(element => {
     console.log(element.dataset.statistic)
-    element.textContent =
-      parseInt(element.textContent) + pieces[piece][element.dataset.statistic]
+    console.log(operation)
+    if (operation === '-') {
+      element.textContent =
+        parseInt(element.textContent) - pieces[piece][element.dataset.statistic]
+    }
+
+    if (operation === '+') {
+      element.textContent =
+        parseInt(element.textContent) + pieces[piece][element.dataset.statistic]
+    }
   })
 }
 
@@ -11,7 +19,9 @@ function controlAdjustment(operation, control, robotPiece) {
   const pieceControl = control.querySelector('[data-counter]')
 
   if (operation === '-') {
-    if (parseInt(pieceControl.value) === 0) return
+    if (parseInt(pieceControl.value) === 0) {
+      return
+    }
     pieceControl.value = parseInt(pieceControl.value) - 1
   }
   if (operation === '+') {
@@ -22,7 +32,7 @@ function controlAdjustment(operation, control, robotPiece) {
     pieceControl.value = `0${parseInt(pieceControl.value)}`
   }
 
-  updateStatistics(robotPiece)
+  updateStatistics(operation, robotPiece)
 }
 
 const controls = document.querySelectorAll('[data-control]')
